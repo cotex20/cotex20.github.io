@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://ianlunn.github.io/Hover/css/hover.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>COTRMX</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 17px;
+            background-color: rgb(63, 63, 63);
+            font-family: 'Kanit', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .content-social {
+            position: fixed;
+            bottom: 0; 
+             
+            transform: translateX(290%); 
+            height: 70vh;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #myVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 50vh;
+            object-fit: cover;
+            filter: blur(px);
+            pointer-events: none; /* Prevent interaction with the GIF */
+        }
+        
+        #myVideo02 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 50vh;
+            object-fit: cover;
+            
+            filter: blur(2px);
+            transform: translate(0%, 100%);
+            pointer-events: none; /* Prevent interaction with the GIF */
+        }
+
+        .img-content {      
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            
+        }
+
+        .ml13 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: #ffffff;
+            
+        }
+
+        .ml13 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        .content-social {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            color: #ffffff;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+           
+        }
+
+        .btn-check:focus+.btn,
+        .btn:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        /* Responsive design */
+        @media (max-width: 767px) {
+            .ml13 {
+                font-size: 2em;
+            }
+
+            .img-content img {
+                width: 80px;
+            }
+
+            .content-social {
+                flex-direction: column;
+                align-items: center;
+                bottom: 10px;
+            }
+
+            .content-social .btn {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body id="body" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div class="content">
+        <img id="myVideo" src="file:///C:/Users/User/Downloads/Final-Render.gif" alt="Background Video">
+        <img id="myVideo02" src="file:///C:/Users/User/Downloads/mylivewallpapers-com-Miles-Top-of-NYC-4K.gif" alt="Background Video">
+        <div class="text-center img-content">
+            <img style="
+                width: 100px;
+                border-radius: 100%;
+                animation-name: hvr-bob-float, hvr-bob;
+                animation-duration: .3s, 1.5s;
+                animation-delay: 0s, .3s;
+                animation-timing-function: ease-out, ease-in-out;
+                animation-iteration-count: 1, infinite;
+                animation-fill-mode: forwards;
+                animation-direction: normal, alternate;" src="https://media.tenor.com/IjX29sgxJVAAAAAi/sleeping-cute.gif" alt="Artist">
+            <div>
+                <h1 class="ml13">
+                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">H</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">e</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">l</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">l</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">o</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">!</span>
+                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">M</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">y</span> <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">n</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">a</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">m</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">e</span> <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">i</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">s</span>
+                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">C</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">O</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">T</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">R</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">M</span><span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">X</span>
+                </h1>
+            </div>
+
+            <div>
+                <center data-aos="fade-up" data-aos-delay="800" data-aos-duration="500" class="aos-init aos-animate">
+                    <hr style="width: 14%; height: 5px; margin-top: 10px;">
+                </center>
+                <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" class="aos-init aos-animate">
+                    <span class="txt-rotate" data-period="2000" data-rotate="[&quot;IG : thirathep_010 &quot;,&quot;FB : Thirathep Rinrit &quot;,&quot; Discord : .s2336 &quot;,&quot; We offer coding services in all languages and back-end system maintenance. &quot;]"><span class="wrap">COTRMX_BY_VcSot_9_REMIXER_DVE_DJ'Producer</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-social">
+        <a href="https://www.instagram.com/thirathep_010/" target="_blank" class="btn hvr-buzz"><i class="bi bi-instagram" style="color:white;font-size:2rem;"></i></a>
+        <a href="https://www.facebook.com/thirathep.1" target="_blank" class="btn hvr-buzz"><i class="bi bi-facebook" style="color:white;font-size:2rem;"></i></a>
+        <a href="https://discord.gg/G7REXWyx" target="_blank" class="btn hvr-buzz"><i class="bi bi-discord" style="color:white;font-size:2rem;"></i></a>
+        <a href="https://ezdn.app/VcSot9" target="_blank" class="btn hvr-buzz"><i class="bi bi-youtube" style="color:white;font-size:2rem;"></i></a>
+        
+        </div>
+    </div>
+
+    <script>
+        var audio = new Audio("https://youtu.be/V2cQifQcxkU?si=FC8IO8AR-lRS_sPO.mp3");
+        $("#body").click(function() {
+            audio.play();
+            audio.volume = 1.0;
+        });
+        AOS.init();
+
+        var textWrapper = document.querySelector('.ml13');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            });
+
+        var TxtRotate = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+        };
+    </script>
+
+
+
+    </body>
+
+</html>
